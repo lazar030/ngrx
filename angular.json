@@ -24,13 +24,26 @@
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
+              "src/assets",
               "src/favicon.ico",
-              "src/assets"
+              "src/assets/images"
             ],
             "styles": [
-              "src/styles.scss"
+              {
+                "input": "src/material.scss"
+              },
+              {
+                "input": "src/styles.scss"
+              }
             ],
-            "scripts": []
+            "scripts": [
+              {
+                "input": "node_modules/jquery/dist/jquery.js"
+              },
+              {
+                "input":"node_modules/bootstrap/dist/js/bootstrap.js"
+              }
+            ]
           },
           "configurations": {
             "production": {

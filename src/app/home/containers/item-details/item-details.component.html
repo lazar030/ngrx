@@ -1,0 +1,8 @@
+<ng-container [ngSwitch]="role">
+  <app-locator-details
+    *ngSwitchCase="'LOCATOR'"
+  ></app-locator-details>
+  <app-vendor-details
+    *ngSwitchCase="'VENDOR'"
+  ></app-vendor-details>
+</ng-container>
